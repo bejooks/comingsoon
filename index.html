@@ -7,6 +7,7 @@
         <meta name="author" content="" />
         <title>Coming Soon - Start Bootstrap Theme</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<script src="https://accounts.google.com/gsi/client" async defer></script>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -17,10 +18,12 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
+
         <!-- Background Video-->
         <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg.mp4" type="video/mp4" /></video>
         <!-- Masthead-->
         <div class="masthead">
+
             <div class="masthead-content text-white">
                 <div class="container-fluid px-4 px-lg-0">
                     <h1 class="fst-italic lh-1 mb-4">Our Website is Coming Soon</h1>
@@ -32,6 +35,21 @@
                     <!-- To make this form functional, sign up at-->
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
+                    <div id="g_id_onload"
+                         data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                         data-login_uri="https://your.domain/your_login_endpoint"
+                         data-ux_mode="redirect"
+                         data-auto_prompt="false">
+                    </div>
+                    <div class="g_id_signin"
+                         data-type="standard"
+                         data-size="large"
+                         data-theme="outline"
+                         data-text="sign_in_with"
+                         data-shape="rectangular"
+                         data-logo_alignment="left">
+                    </div>
+
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <!-- Email address input-->
                         <div class="row input-group-newsletter">
